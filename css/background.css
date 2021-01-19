@@ -15,10 +15,16 @@ body {
   top: 40vh;
 }
 
-.context h1 h3{
+.context h1{
   text-align: center;
   color: #fff;
   font-size: 50px;
+  font-family: "Exo", sans-serif;
+}
+
+h3{
+  text-align: center;
+  color: #fff;
   font-family: "Exo", sans-serif;
 }
 
