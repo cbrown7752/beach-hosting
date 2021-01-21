@@ -13,9 +13,10 @@
   /* Float four columns side by side */
   .column {
     float: right;
-    width: 10%;
+    width: 30%;
     padding: 0 10px;
     margin-right: auto;
+    margin-left: auto;
     text-align: center;
     
   }
