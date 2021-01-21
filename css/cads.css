@@ -12,6 +12,8 @@
     width: 30%;
     padding: 0 10px;
     margin-right: auto;
+    text-align: center;
+    
   }
   
   /* Remove extra left and right margins, due to padding */
@@ -19,7 +21,6 @@
    {margin: 0 -5px;
     text-align: center;
    }
-       
   
   /* Clear floats after the columns */
   .row:after {
