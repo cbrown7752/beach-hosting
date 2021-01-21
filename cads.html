@@ -4,11 +4,78 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/nav.css">
-<link rel="stylesheet" href="css/home.css">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    margin-right: auto;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #2c2b2b;
+  }
+    
+  .button2 {
+    background-color: black;
+    color: white;
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  </style>
 </head>
-<body>
+<body style="background-color:black;">
   <div class="nav">
-        <div id="Navbar" class="sidenav">
+      <div id="Navbar" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="https://discord.gg/HVRBPWt">Discord Invite</a>
@@ -17,33 +84,41 @@
         <a href="bubble.html">Bubble</a>
         <a href="discord.html">Discords</a>
         <a href="cad-warranty.html">Cads Warranty</a>
+      </div>
+    <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+  </div>
+  <br />
+  <section class="products">
+    <div class="grid" class="row">
+      <div class="column">
+        <div class="card">
+          <h3 style="color:white;">BUTTERFINGER</h3>
+          <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1608193729294x502542996205672000%2Fdiscord-logo-1024x1024%2520%25281%2529.png?w=512&h=512&auto=compress&dpr=1&fit=max" width="310" height="263" alt="Klematis">
+          <p style="color:white;">CAD</p>
+          <p style="color:gray;">Price-4$</p>
+          <button class="button button2">Details</button>
         </div>
-        <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h3 style="color:white;">BUTTERFINGER</h3>
+          <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1608193729294x502542996205672000%2Fdiscord-logo-1024x1024%2520%25281%2529.png?w=512&h=512&auto=compress&dpr=1&fit=max" width="310" height="263" alt="Klematis">
+          <p style="color:white;">CAD</p>
+          <p style="color:gray;">Price-4$</p>
+          <button class="button button2">Details</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h3 style="color:white;">BUTTERFINGER</h3>
+          <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1608193729294x502542996205672000%2Fdiscord-logo-1024x1024%2520%25281%2529.png?w=512&h=512&auto=compress&dpr=1&fit=max" width="310" height="263" alt="Klematis">
+          <p style="color:white;">CAD</p>
+          <p style="color:gray;">Price-4$</p>
+          <button class="button button2">Details</button>
+        </div>
+      </div>
     </div>
-<body style="background-color:black;">
-<div class="grid" class="grid-item">
-  <div class="pro">
-  <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1608193729294x502542996205672000%2Fdiscord-logo-1024x1024%2520%25281%2529.png?w=512&h=512&auto=compress&dpr=1&fit=max" width="310" height="263" alt="Klematis">
-  <h1 style="color:white;">BUTTERFINGER</h1>
-  <h1 style="color:white;">CAD</h1>
-  <h4 style="color:gray;">Price-4$</h4>
-  <button class="button button2">Details</button>
-  </div>
-  <div class="pro">
-  <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1608193729294x502542996205672000%2Fdiscord-logo-1024x1024%2520%25281%2529.png?w=512&h=512&auto=compress&dpr=1&fit=max" width="310" height="263" alt="Klematis">
-  <h1 style="color:white;">BUTTERFINGER</h1>
-  <h1 style="color:white;">CAD</h1>
-  <h4 style="color:gray;">Price-4$</h4>
-  <button class="button button2">Details</button>
-  </div>
-  <div class="pro">
-  <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1608193729294x502542996205672000%2Fdiscord-logo-1024x1024%2520%25281%2529.png?w=512&h=512&auto=compress&dpr=1&fit=max" width="310" height="263" alt="Klematis">
-  <h1 style="color:white;">BUTTERFINGER</h1>
-  <h1 style="color:white;">CAD</h1>
-  <h4 style="color:gray;">Price-4$</h4>
-  <button class="button button2">Details</button>
-  </div>
-</div>
-  <script src="js/nav.js"></script>
+  </section>
+<script src="js/nav.js"></script>
 </body>
 </html>
