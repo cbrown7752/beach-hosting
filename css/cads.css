@@ -12,7 +12,7 @@
   
   /* Float four columns side by side */
   .column {
-    
+    float: none;
     width: 30%;
     padding: 0 10px;
     margin-right: auto;
