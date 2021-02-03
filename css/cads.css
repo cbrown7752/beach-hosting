@@ -76,3 +76,9 @@
     transition-duration: 0.4s;
     cursor: pointer;
   }
+   footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #333333;
+            color: white;
+        }  
